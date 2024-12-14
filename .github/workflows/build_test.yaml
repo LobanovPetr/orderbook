@@ -1,4 +1,4 @@
-name: build test benchmark 
+name: build test 
 on: [push]
 jobs:
   build:
