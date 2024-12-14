@@ -63,6 +63,11 @@ public:
      * @return true if no orders present, false otherwise
      */
     bool Empty() const;
+private:
+    std::vector<Order> Asks;
+    std::vector<Order> Bids;
+
+    friend OrderBook ParseOrderBook(const std::string &response);
 };
 
 /**

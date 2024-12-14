@@ -5,6 +5,34 @@
 #include <stdexcept>
 
 /**
+ * @brief Class for storing HTTP response data
+ */
+class CurlResponse {
+public:
+    /**
+     * @brief Constructor
+     * @param responseCode HTTP response code
+     * @param responseBody Response body content
+     */
+    CurlResponse(int responseCode, std::string responseBody);
+
+    /**
+     * @brief Get response code
+     * @return HTTP response code
+     */
+    int GetResponseCode() const;
+
+    /**
+     * @brief Get response body
+     * @return String containing response body
+     */
+    const std::string& GetResponseBody() const;
+private:
+    int responseCode_;
+    std::string responseBody_;
+};
+
+/**
  * @brief Exception class for curl-related errors
  */
 class CurlException : public std::runtime_error {
@@ -39,29 +67,6 @@ public:
      * @throw CurlException on request failure
      */
     CurlResponse Get(const std::string &url) const;
-};
-
-/**
- * @brief Class for storing HTTP response data
- */
-class CurlResponse {
-public:
-    /**
-     * @brief Constructor
-     * @param responseCode HTTP response code
-     * @param responseBody Response body content
-     */
-    CurlResponse(int responseCode, std::string responseBody);
-
-    /**
-     * @brief Get response code
-     * @return HTTP response code
-     */
-    int GetResponseCode() const;
-
-    /**
-     * @brief Get response body
-     * @return String containing response body
-     */
-    const std::string& GetResponseBody() const;
+private:
+    CURL* Curl_;
 };
