@@ -5,10 +5,14 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Orderbook: /home/runner/work/orderbook/orderbook/order_book/include/order_book/order_book.h Source File</title>
+<title>OrderBook: /home/runner/work/orderbook/orderbook/order_book/include/order_book/order_book.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -21,8 +25,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Orderbook
+   <div id="projectname">OrderBook
    </div>
+   <div id="projectbrief">C++ Order Book Implementation with Binance API Integration</div>
   </td>
  </tr>
  </tbody>
@@ -51,6 +56,23 @@ $(function() {
 $(document).ready(function() { init_codefold(0); });
 /* @license-end */
 </script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('order__book_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -72,11 +94,6 @@ $(document).ready(function() { init_codefold(0); });
 </div>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_5ba74e505e529daada09d13d1c558363.html">order_book</a></li><li class="navelem"><a class="el" href="dir_6fa56b2c1885b0815cb621a121915051.html">include</a></li><li class="navelem"><a class="el" href="dir_54f9ecc20c3ed71680c795f73caccc77.html">order_book</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle"><div class="title">order_book.h</div></div>
 </div><!--header-->
@@ -112,32 +129,38 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classOrderBook.html#a3c64d0ce3af05490adbad50c59884aa2">Empty</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    std::vector&lt;Order&gt; Asks;</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    std::vector&lt;Order&gt; Bids;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="classOrderBook.html#a847ec2e26715a08cc4527d569a4e7ced">   67</a></span>    std::vector&lt;Order&gt; <a class="code hl_variable" href="classOrderBook.html#a847ec2e26715a08cc4527d569a4e7ced">Asks</a>;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="classOrderBook.html#ad10dafdf0d05159bbeb2c68004f0949a">   68</a></span>    std::vector&lt;Order&gt; <a class="code hl_variable" href="classOrderBook.html#ad10dafdf0d05159bbeb2c68004f0949a">Bids</a>;</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keyword">friend</span> <a class="code hl_class" href="classOrderBook.html">OrderBook</a> <a class="code hl_friend" href="classOrderBook.html#ad326579ead186f02e42f41af9ad5dbb9">ParseOrderBook</a>(<span class="keyword">const</span> std::string &amp;response);</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>};</div>
 </div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><a class="code hl_class" href="classOrderBook.html">OrderBook</a> <a class="code hl_function" href="order__book_8h.html#ad326579ead186f02e42f41af9ad5dbb9">ParseOrderBook</a>(<span class="keyword">const</span> std::string &amp;response);</div>
-<div class="ttc" id="aclassOrderBook_html"><div class="ttname"><a href="classOrderBook.html">OrderBook</a></div><div class="ttdoc">Class implementing order book functionality.</div><div class="ttdef"><b>Definition</b> order_book.h:17</div></div>
-<div class="ttc" id="aclassOrderBook_html_a27d06d51c2270dfd8fc0eb364debeba8"><div class="ttname"><a href="classOrderBook.html#a27d06d51c2270dfd8fc0eb364debeba8">OrderBook::GetSpread</a></div><div class="ttdeci">std::optional&lt; double &gt; GetSpread() const</div><div class="ttdoc">Get the spread between best ask and bid prices.</div><div class="ttdef"><b>Definition</b> order_book.cpp:24</div></div>
-<div class="ttc" id="aclassOrderBook_html_a3c64d0ce3af05490adbad50c59884aa2"><div class="ttname"><a href="classOrderBook.html#a3c64d0ce3af05490adbad50c59884aa2">OrderBook::Empty</a></div><div class="ttdeci">bool Empty() const</div><div class="ttdoc">Check if order book is empty.</div><div class="ttdef"><b>Definition</b> order_book.cpp:77</div></div>
-<div class="ttc" id="aclassOrderBook_html_a7924b1050a1fcb25159d6a989c85dfcd"><div class="ttname"><a href="classOrderBook.html#a7924b1050a1fcb25159d6a989c85dfcd">OrderBook::GetBestAskPrice</a></div><div class="ttdeci">std::optional&lt; double &gt; GetBestAskPrice() const</div><div class="ttdoc">Get the best ask price.</div><div class="ttdef"><b>Definition</b> order_book.cpp:3</div></div>
-<div class="ttc" id="aclassOrderBook_html_ab70f718b819c348480a3731c38cc3a1d"><div class="ttname"><a href="classOrderBook.html#ab70f718b819c348480a3731c38cc3a1d">OrderBook::GetBidDepth</a></div><div class="ttdeci">double GetBidDepth() const</div><div class="ttdoc">Get total bid depth.</div><div class="ttdef"><b>Definition</b> order_book.cpp:40</div></div>
-<div class="ttc" id="aclassOrderBook_html_ad326579ead186f02e42f41af9ad5dbb9"><div class="ttname"><a href="classOrderBook.html#ad326579ead186f02e42f41af9ad5dbb9">OrderBook::ParseOrderBook</a></div><div class="ttdeci">friend OrderBook ParseOrderBook(const std::string &amp;response)</div><div class="ttdoc">Parse JSON string into OrderBook object.</div><div class="ttdef"><b>Definition</b> order_book.cpp:56</div></div>
-<div class="ttc" id="aclassOrderBook_html_ad6343b0e78236e5558c34ec9f45c84f1"><div class="ttname"><a href="classOrderBook.html#ad6343b0e78236e5558c34ec9f45c84f1">OrderBook::GetAskDepth</a></div><div class="ttdeci">double GetAskDepth() const</div><div class="ttdoc">Get total ask depth.</div><div class="ttdef"><b>Definition</b> order_book.cpp:33</div></div>
-<div class="ttc" id="aclassOrderBook_html_ad84f41a2aa8d2a96aa3d94d98466daaa"><div class="ttname"><a href="classOrderBook.html#ad84f41a2aa8d2a96aa3d94d98466daaa">OrderBook::GetBestBidPrice</a></div><div class="ttdeci">std::optional&lt; double &gt; GetBestBidPrice() const</div><div class="ttdoc">Get the best bid price.</div><div class="ttdef"><b>Definition</b> order_book.cpp:9</div></div>
-<div class="ttc" id="aclassOrderBook_html_aeb63d661a3bb75e55237b3e537abbf5a"><div class="ttname"><a href="classOrderBook.html#aeb63d661a3bb75e55237b3e537abbf5a">OrderBook::GetImbalance</a></div><div class="ttdeci">double GetImbalance() const</div><div class="ttdoc">Calculate order book imbalance.</div><div class="ttdef"><b>Definition</b> order_book.cpp:47</div></div>
-<div class="ttc" id="aclassOrderBook_html_afd574c586e4de842095826bb73b4af9c"><div class="ttname"><a href="classOrderBook.html#afd574c586e4de842095826bb73b4af9c">OrderBook::GetMidPrice</a></div><div class="ttdeci">std::optional&lt; double &gt; GetMidPrice() const</div><div class="ttdoc">Get the mid price between best bid and ask.</div><div class="ttdef"><b>Definition</b> order_book.cpp:15</div></div>
-<div class="ttc" id="aorder__book_8h_html_ad326579ead186f02e42f41af9ad5dbb9"><div class="ttname"><a href="order__book_8h.html#ad326579ead186f02e42f41af9ad5dbb9">ParseOrderBook</a></div><div class="ttdeci">OrderBook ParseOrderBook(const std::string &amp;response)</div><div class="ttdoc">Parse JSON string into OrderBook object.</div><div class="ttdef"><b>Definition</b> order_book.cpp:56</div></div>
-<div class="ttc" id="astructOrder_html"><div class="ttname"><a href="structOrder.html">Order</a></div><div class="ttdoc">Order structure representing a single order in the order book.</div><div class="ttdef"><b>Definition</b> order_book.h:9</div></div>
-<div class="ttc" id="astructOrder_html_a22df57af82ecda59bd0ed1f7534a170b"><div class="ttname"><a href="structOrder.html#a22df57af82ecda59bd0ed1f7534a170b">Order::price</a></div><div class="ttdeci">double price</div><div class="ttdoc">Order price.</div><div class="ttdef"><b>Definition</b> order_book.h:10</div></div>
-<div class="ttc" id="astructOrder_html_aab51d35d3c9acaf6c85076f379b64c03"><div class="ttname"><a href="structOrder.html#aab51d35d3c9acaf6c85076f379b64c03">Order::quantity</a></div><div class="ttdeci">double quantity</div><div class="ttdoc">Order quantity.</div><div class="ttdef"><b>Definition</b> order_book.h:11</div></div>
+<div class="ttc" id="aclassOrderBook_html"><div class="ttname"><a href="classOrderBook.html">OrderBook</a></div><div class="ttdoc">Class implementing order book functionality.</div><div class="ttdef"><b>Definition</b> <a href="order__book_8h_source.html#l00017">order_book.h:17</a></div></div>
+<div class="ttc" id="aclassOrderBook_html_a27d06d51c2270dfd8fc0eb364debeba8"><div class="ttname"><a href="classOrderBook.html#a27d06d51c2270dfd8fc0eb364debeba8">OrderBook::GetSpread</a></div><div class="ttdeci">std::optional&lt; double &gt; GetSpread() const</div><div class="ttdoc">Get the spread between best ask and bid prices.</div><div class="ttdef"><b>Definition</b> <a href="order__book_8cpp_source.html#l00024">order_book.cpp:24</a></div></div>
+<div class="ttc" id="aclassOrderBook_html_a3c64d0ce3af05490adbad50c59884aa2"><div class="ttname"><a href="classOrderBook.html#a3c64d0ce3af05490adbad50c59884aa2">OrderBook::Empty</a></div><div class="ttdeci">bool Empty() const</div><div class="ttdoc">Check if order book is empty.</div><div class="ttdef"><b>Definition</b> <a href="order__book_8cpp_source.html#l00077">order_book.cpp:77</a></div></div>
+<div class="ttc" id="aclassOrderBook_html_a7924b1050a1fcb25159d6a989c85dfcd"><div class="ttname"><a href="classOrderBook.html#a7924b1050a1fcb25159d6a989c85dfcd">OrderBook::GetBestAskPrice</a></div><div class="ttdeci">std::optional&lt; double &gt; GetBestAskPrice() const</div><div class="ttdoc">Get the best ask price.</div><div class="ttdef"><b>Definition</b> <a href="order__book_8cpp_source.html#l00003">order_book.cpp:3</a></div></div>
+<div class="ttc" id="aclassOrderBook_html_a847ec2e26715a08cc4527d569a4e7ced"><div class="ttname"><a href="classOrderBook.html#a847ec2e26715a08cc4527d569a4e7ced">OrderBook::Asks</a></div><div class="ttdeci">std::vector&lt; Order &gt; Asks</div><div class="ttdef"><b>Definition</b> <a href="order__book_8h_source.html#l00067">order_book.h:67</a></div></div>
+<div class="ttc" id="aclassOrderBook_html_ab70f718b819c348480a3731c38cc3a1d"><div class="ttname"><a href="classOrderBook.html#ab70f718b819c348480a3731c38cc3a1d">OrderBook::GetBidDepth</a></div><div class="ttdeci">double GetBidDepth() const</div><div class="ttdoc">Get total bid depth.</div><div class="ttdef"><b>Definition</b> <a href="order__book_8cpp_source.html#l00040">order_book.cpp:40</a></div></div>
+<div class="ttc" id="aclassOrderBook_html_ad10dafdf0d05159bbeb2c68004f0949a"><div class="ttname"><a href="classOrderBook.html#ad10dafdf0d05159bbeb2c68004f0949a">OrderBook::Bids</a></div><div class="ttdeci">std::vector&lt; Order &gt; Bids</div><div class="ttdef"><b>Definition</b> <a href="order__book_8h_source.html#l00068">order_book.h:68</a></div></div>
+<div class="ttc" id="aclassOrderBook_html_ad326579ead186f02e42f41af9ad5dbb9"><div class="ttname"><a href="classOrderBook.html#ad326579ead186f02e42f41af9ad5dbb9">OrderBook::ParseOrderBook</a></div><div class="ttdeci">friend OrderBook ParseOrderBook(const std::string &amp;response)</div><div class="ttdoc">Parse JSON string into OrderBook object.</div><div class="ttdef"><b>Definition</b> <a href="order__book_8cpp_source.html#l00056">order_book.cpp:56</a></div></div>
+<div class="ttc" id="aclassOrderBook_html_ad6343b0e78236e5558c34ec9f45c84f1"><div class="ttname"><a href="classOrderBook.html#ad6343b0e78236e5558c34ec9f45c84f1">OrderBook::GetAskDepth</a></div><div class="ttdeci">double GetAskDepth() const</div><div class="ttdoc">Get total ask depth.</div><div class="ttdef"><b>Definition</b> <a href="order__book_8cpp_source.html#l00033">order_book.cpp:33</a></div></div>
+<div class="ttc" id="aclassOrderBook_html_ad84f41a2aa8d2a96aa3d94d98466daaa"><div class="ttname"><a href="classOrderBook.html#ad84f41a2aa8d2a96aa3d94d98466daaa">OrderBook::GetBestBidPrice</a></div><div class="ttdeci">std::optional&lt; double &gt; GetBestBidPrice() const</div><div class="ttdoc">Get the best bid price.</div><div class="ttdef"><b>Definition</b> <a href="order__book_8cpp_source.html#l00009">order_book.cpp:9</a></div></div>
+<div class="ttc" id="aclassOrderBook_html_aeb63d661a3bb75e55237b3e537abbf5a"><div class="ttname"><a href="classOrderBook.html#aeb63d661a3bb75e55237b3e537abbf5a">OrderBook::GetImbalance</a></div><div class="ttdeci">double GetImbalance() const</div><div class="ttdoc">Calculate order book imbalance.</div><div class="ttdef"><b>Definition</b> <a href="order__book_8cpp_source.html#l00047">order_book.cpp:47</a></div></div>
+<div class="ttc" id="aclassOrderBook_html_afd574c586e4de842095826bb73b4af9c"><div class="ttname"><a href="classOrderBook.html#afd574c586e4de842095826bb73b4af9c">OrderBook::GetMidPrice</a></div><div class="ttdeci">std::optional&lt; double &gt; GetMidPrice() const</div><div class="ttdoc">Get the mid price between best bid and ask.</div><div class="ttdef"><b>Definition</b> <a href="order__book_8cpp_source.html#l00015">order_book.cpp:15</a></div></div>
+<div class="ttc" id="aorder__book_8h_html_ad326579ead186f02e42f41af9ad5dbb9"><div class="ttname"><a href="order__book_8h.html#ad326579ead186f02e42f41af9ad5dbb9">ParseOrderBook</a></div><div class="ttdeci">OrderBook ParseOrderBook(const std::string &amp;response)</div><div class="ttdoc">Parse JSON string into OrderBook object.</div><div class="ttdef"><b>Definition</b> <a href="order__book_8cpp_source.html#l00056">order_book.cpp:56</a></div></div>
+<div class="ttc" id="astructOrder_html"><div class="ttname"><a href="structOrder.html">Order</a></div><div class="ttdoc">Order structure representing a single order in the order book.</div><div class="ttdef"><b>Definition</b> <a href="order__book_8h_source.html#l00009">order_book.h:9</a></div></div>
+<div class="ttc" id="astructOrder_html_a22df57af82ecda59bd0ed1f7534a170b"><div class="ttname"><a href="structOrder.html#a22df57af82ecda59bd0ed1f7534a170b">Order::price</a></div><div class="ttdeci">double price</div><div class="ttdoc">Order price.</div><div class="ttdef"><b>Definition</b> <a href="order__book_8h_source.html#l00010">order_book.h:10</a></div></div>
+<div class="ttc" id="astructOrder_html_aab51d35d3c9acaf6c85076f379b64c03"><div class="ttname"><a href="structOrder.html#aab51d35d3c9acaf6c85076f379b64c03">Order::quantity</a></div><div class="ttdeci">double quantity</div><div class="ttdoc">Order quantity.</div><div class="ttdef"><b>Definition</b> <a href="order__book_8h_source.html#l00011">order_book.h:11</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_5ba74e505e529daada09d13d1c558363.html">order_book</a></li><li class="navelem"><a class="el" href="dir_6fa56b2c1885b0815cb621a121915051.html">include</a></li><li class="navelem"><a class="el" href="dir_54f9ecc20c3ed71680c795f73caccc77.html">order_book</a></li><li class="navelem"><a class="el" href="order__book_8h.html">order_book.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
 </body>
 </html>

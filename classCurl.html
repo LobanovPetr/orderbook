@@ -5,10 +5,14 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Orderbook: Curl Class Reference</title>
+<title>OrderBook: Curl Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -21,8 +25,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Orderbook
+   <div id="projectname">OrderBook
    </div>
+   <div id="projectbrief">C++ Order Book Implementation with Binance API Integration</div>
   </td>
  </tr>
  </tbody>
@@ -46,6 +51,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classCurl.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -67,10 +89,10 @@ $(function() {
 </div>
 </div>
 
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classCurl-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Curl Class Reference</div></div>
 </div><!--header-->
@@ -86,15 +108,22 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adf5b3430f1e9535487a435dd2a8f16b1" id="r_adf5b3430f1e9535487a435dd2a8f16b1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCurl.html#adf5b3430f1e9535487a435dd2a8f16b1">Curl</a> ()</td></tr>
 <tr class="memdesc:adf5b3430f1e9535487a435dd2a8f16b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor that initializes curl library.  <br /></td></tr>
 <tr class="separator:adf5b3430f1e9535487a435dd2a8f16b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b768a5f0ffd38e6766f5d99894707ea" id="r_a3b768a5f0ffd38e6766f5d99894707ea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCurl.html#a3b768a5f0ffd38e6766f5d99894707ea">~Curl</a> ()</td></tr>
-<tr class="memdesc:a3b768a5f0ffd38e6766f5d99894707ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor that cleans up curl resources.  <br /></td></tr>
-<tr class="separator:a3b768a5f0ffd38e6766f5d99894707ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1015791cda8111caf99aff332cf3f5ca" id="r_a1015791cda8111caf99aff332cf3f5ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCurlResponse.html">CurlResponse</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCurl.html#a1015791cda8111caf99aff332cf3f5ca">Get</a> (const std::string &amp;url) const</td></tr>
 <tr class="memdesc:a1015791cda8111caf99aff332cf3f5ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform GET request to specified URL.  <br /></td></tr>
 <tr class="separator:a1015791cda8111caf99aff332cf3f5ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b768a5f0ffd38e6766f5d99894707ea" id="r_a3b768a5f0ffd38e6766f5d99894707ea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCurl.html#a3b768a5f0ffd38e6766f5d99894707ea">~Curl</a> ()</td></tr>
+<tr class="memdesc:a3b768a5f0ffd38e6766f5d99894707ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor that cleans up curl resources.  <br /></td></tr>
+<tr class="separator:a3b768a5f0ffd38e6766f5d99894707ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:aecadd4c9bad724c988d424dd248c8dee" id="r_aecadd4c9bad724c988d424dd248c8dee"><td class="memItemLeft" align="right" valign="top">CURL *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCurl.html#aecadd4c9bad724c988d424dd248c8dee">Curl_</a></td></tr>
+<tr class="separator:aecadd4c9bad724c988d424dd248c8dee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Wrapper class for libcurl functionality. </p>
+
+<p class="definition">Definition at line <a class="el" href="curl__wrapper_8h_source.html#l00057">57</a> of file <a class="el" href="curl__wrapper_8h_source.html">curl_wrapper.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="adf5b3430f1e9535487a435dd2a8f16b1" name="adf5b3430f1e9535487a435dd2a8f16b1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adf5b3430f1e9535487a435dd2a8f16b1">&#9670;&#160;</a></span>Curl()</h2>
@@ -119,6 +148,20 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
+<p class="definition">Definition at line <a class="el" href="curl__wrapper_8cpp_source.html#l00008">8</a> of file <a class="el" href="curl__wrapper_8cpp_source.html">curl_wrapper.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">    8</span>           {</div>
+<div class="line"><span class="lineno">    9</span>    <span class="keywordflow">if</span> (curl_global_init(CURL_GLOBAL_ALL) != CURLE_OK) {</div>
+<div class="line"><span class="lineno">   10</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="classCurlException.html">CurlException</a>(<span class="stringliteral">&quot;Failed to initialize CURL&quot;</span>);</div>
+<div class="line"><span class="lineno">   11</span>    }</div>
+<div class="line"><span class="lineno">   12</span>    <a class="code hl_variable" href="classCurl.html#aecadd4c9bad724c988d424dd248c8dee">Curl_</a> = curl_easy_init();</div>
+<div class="line"><span class="lineno">   13</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classCurl.html#aecadd4c9bad724c988d424dd248c8dee">Curl_</a>) {</div>
+<div class="line"><span class="lineno">   14</span>        curl_global_cleanup();</div>
+<div class="line"><span class="lineno">   15</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="classCurlException.html">CurlException</a>(<span class="stringliteral">&quot;Failed to create CURL handle&quot;</span>);</div>
+<div class="line"><span class="lineno">   16</span>    }</div>
+<div class="line"><span class="lineno">   17</span>}</div>
+<div class="ttc" id="aclassCurlException_html"><div class="ttname"><a href="classCurlException.html">CurlException</a></div><div class="ttdoc">Exception class for curl-related errors.</div><div class="ttdef"><b>Definition</b> <a href="curl__wrapper_8h_source.html#l00045">curl_wrapper.h:45</a></div></div>
+<div class="ttc" id="aclassCurl_html_aecadd4c9bad724c988d424dd248c8dee"><div class="ttname"><a href="classCurl.html#aecadd4c9bad724c988d424dd248c8dee">Curl::Curl_</a></div><div class="ttdeci">CURL * Curl_</div><div class="ttdef"><b>Definition</b> <a href="curl__wrapper_8h_source.html#l00078">curl_wrapper.h:78</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a3b768a5f0ffd38e6766f5d99894707ea" name="a3b768a5f0ffd38e6766f5d99894707ea"></a>
@@ -138,6 +181,14 @@ Public Member Functions</h2></td></tr>
 
 <p>Destructor that cleans up curl resources. </p>
 
+<p class="definition">Definition at line <a class="el" href="curl__wrapper_8cpp_source.html#l00037">37</a> of file <a class="el" href="curl__wrapper_8cpp_source.html">curl_wrapper.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   37</span>            {</div>
+<div class="line"><span class="lineno">   38</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classCurl.html#aecadd4c9bad724c988d424dd248c8dee">Curl_</a>) {</div>
+<div class="line"><span class="lineno">   39</span>      curl_easy_cleanup(<a class="code hl_variable" href="classCurl.html#aecadd4c9bad724c988d424dd248c8dee">Curl_</a>);</div>
+<div class="line"><span class="lineno">   40</span>    }</div>
+<div class="line"><span class="lineno">   41</span>    curl_global_cleanup();</div>
+<div class="line"><span class="lineno">   42</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -172,16 +223,65 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
+<p class="definition">Definition at line <a class="el" href="curl__wrapper_8cpp_source.html#l00019">19</a> of file <a class="el" href="curl__wrapper_8cpp_source.html">curl_wrapper.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   19</span>                                                 {</div>
+<div class="line"><span class="lineno">   20</span>    std::string buffer;</div>
+<div class="line"><span class="lineno">   21</span>    curl_easy_setopt(<a class="code hl_variable" href="classCurl.html#aecadd4c9bad724c988d424dd248c8dee">Curl_</a>, CURLOPT_URL, url.c_str());</div>
+<div class="line"><span class="lineno">   22</span>    curl_easy_setopt(<a class="code hl_variable" href="classCurl.html#aecadd4c9bad724c988d424dd248c8dee">Curl_</a>, CURLOPT_WRITEFUNCTION, <a class="code hl_function" href="curl__wrapper_8cpp.html#ab54064eb3c1650bc846b7731da4b07b1">WriteCallback</a>);</div>
+<div class="line"><span class="lineno">   23</span>    curl_easy_setopt(<a class="code hl_variable" href="classCurl.html#aecadd4c9bad724c988d424dd248c8dee">Curl_</a>, CURLOPT_WRITEDATA, &amp;buffer);</div>
+<div class="line"><span class="lineno">   24</span>    CURLcode res = curl_easy_perform(<a class="code hl_variable" href="classCurl.html#aecadd4c9bad724c988d424dd248c8dee">Curl_</a>);</div>
+<div class="line"><span class="lineno">   25</span> </div>
+<div class="line"><span class="lineno">   26</span>    <span class="keywordflow">if</span> (res != CURLE_OK) {</div>
+<div class="line"><span class="lineno">   27</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="classCurlException.html">CurlException</a>(<span class="stringliteral">&quot;Error libcurl: &quot;</span> +</div>
+<div class="line"><span class="lineno">   28</span>                            std::string(curl_easy_strerror(res)));</div>
+<div class="line"><span class="lineno">   29</span>    }</div>
+<div class="line"><span class="lineno">   30</span> </div>
+<div class="line"><span class="lineno">   31</span>    <span class="keywordtype">int</span> responseCode = 0;</div>
+<div class="line"><span class="lineno">   32</span>    curl_easy_getinfo(<a class="code hl_variable" href="classCurl.html#aecadd4c9bad724c988d424dd248c8dee">Curl_</a>, CURLINFO_RESPONSE_CODE, &amp;responseCode);</div>
+<div class="line"><span class="lineno">   33</span> </div>
+<div class="line"><span class="lineno">   34</span>    <span class="keywordflow">return</span> {responseCode, buffer};</div>
+<div class="line"><span class="lineno">   35</span>}</div>
+<div class="ttc" id="acurl__wrapper_8cpp_html_ab54064eb3c1650bc846b7731da4b07b1"><div class="ttname"><a href="curl__wrapper_8cpp.html#ab54064eb3c1650bc846b7731da4b07b1">WriteCallback</a></div><div class="ttdeci">static size_t WriteCallback(void *contents, size_t size, size_t nmemb, void *userp)</div><div class="ttdef"><b>Definition</b> <a href="curl__wrapper_8cpp_source.html#l00003">curl_wrapper.cpp:3</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="aecadd4c9bad724c988d424dd248c8dee" name="aecadd4c9bad724c988d424dd248c8dee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecadd4c9bad724c988d424dd248c8dee">&#9670;&#160;</a></span>Curl_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CURL* Curl::Curl_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="curl__wrapper_8h_source.html#l00078">78</a> of file <a class="el" href="curl__wrapper_8h_source.html">curl_wrapper.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/runner/work/orderbook/orderbook/curl_wrapper/include/curl_wrapper/<a class="el" href="curl__wrapper_8h_source.html">curl_wrapper.h</a></li>
-<li>/home/runner/work/orderbook/orderbook/curl_wrapper/<a class="el" href="curl__wrapper_8cpp.html">curl_wrapper.cpp</a></li>
+<li>/home/runner/work/orderbook/orderbook/curl_wrapper/<a class="el" href="curl__wrapper_8cpp_source.html">curl_wrapper.cpp</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classCurl.html">Curl</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
 </body>
 </html>

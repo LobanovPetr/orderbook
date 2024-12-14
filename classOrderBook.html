@@ -5,10 +5,14 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Orderbook: OrderBook Class Reference</title>
+<title>OrderBook: OrderBook Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -21,8 +25,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Orderbook
+   <div id="projectname">OrderBook
    </div>
+   <div id="projectbrief">C++ Order Book Implementation with Binance API Integration</div>
   </td>
  </tr>
  </tbody>
@@ -46,6 +51,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classOrderBook.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -67,10 +89,10 @@ $(function() {
 </div>
 </div>
 
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classOrderBook-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">OrderBook Class Reference</div></div>
@@ -84,30 +106,37 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a3c64d0ce3af05490adbad50c59884aa2" id="r_a3c64d0ce3af05490adbad50c59884aa2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOrderBook.html#a3c64d0ce3af05490adbad50c59884aa2">Empty</a> () const</td></tr>
+<tr class="memdesc:a3c64d0ce3af05490adbad50c59884aa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if order book is empty.  <br /></td></tr>
+<tr class="separator:a3c64d0ce3af05490adbad50c59884aa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6343b0e78236e5558c34ec9f45c84f1" id="r_ad6343b0e78236e5558c34ec9f45c84f1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOrderBook.html#ad6343b0e78236e5558c34ec9f45c84f1">GetAskDepth</a> () const</td></tr>
+<tr class="memdesc:ad6343b0e78236e5558c34ec9f45c84f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get total ask depth.  <br /></td></tr>
+<tr class="separator:ad6343b0e78236e5558c34ec9f45c84f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7924b1050a1fcb25159d6a989c85dfcd" id="r_a7924b1050a1fcb25159d6a989c85dfcd"><td class="memItemLeft" align="right" valign="top">std::optional&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOrderBook.html#a7924b1050a1fcb25159d6a989c85dfcd">GetBestAskPrice</a> () const</td></tr>
 <tr class="memdesc:a7924b1050a1fcb25159d6a989c85dfcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the best ask price.  <br /></td></tr>
 <tr class="separator:a7924b1050a1fcb25159d6a989c85dfcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad84f41a2aa8d2a96aa3d94d98466daaa" id="r_ad84f41a2aa8d2a96aa3d94d98466daaa"><td class="memItemLeft" align="right" valign="top">std::optional&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOrderBook.html#ad84f41a2aa8d2a96aa3d94d98466daaa">GetBestBidPrice</a> () const</td></tr>
 <tr class="memdesc:ad84f41a2aa8d2a96aa3d94d98466daaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the best bid price.  <br /></td></tr>
 <tr class="separator:ad84f41a2aa8d2a96aa3d94d98466daaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd574c586e4de842095826bb73b4af9c" id="r_afd574c586e4de842095826bb73b4af9c"><td class="memItemLeft" align="right" valign="top">std::optional&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOrderBook.html#afd574c586e4de842095826bb73b4af9c">GetMidPrice</a> () const</td></tr>
-<tr class="memdesc:afd574c586e4de842095826bb73b4af9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the mid price between best bid and ask.  <br /></td></tr>
-<tr class="separator:afd574c586e4de842095826bb73b4af9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27d06d51c2270dfd8fc0eb364debeba8" id="r_a27d06d51c2270dfd8fc0eb364debeba8"><td class="memItemLeft" align="right" valign="top">std::optional&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOrderBook.html#a27d06d51c2270dfd8fc0eb364debeba8">GetSpread</a> () const</td></tr>
-<tr class="memdesc:a27d06d51c2270dfd8fc0eb364debeba8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the spread between best ask and bid prices.  <br /></td></tr>
-<tr class="separator:a27d06d51c2270dfd8fc0eb364debeba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6343b0e78236e5558c34ec9f45c84f1" id="r_ad6343b0e78236e5558c34ec9f45c84f1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOrderBook.html#ad6343b0e78236e5558c34ec9f45c84f1">GetAskDepth</a> () const</td></tr>
-<tr class="memdesc:ad6343b0e78236e5558c34ec9f45c84f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get total ask depth.  <br /></td></tr>
-<tr class="separator:ad6343b0e78236e5558c34ec9f45c84f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab70f718b819c348480a3731c38cc3a1d" id="r_ab70f718b819c348480a3731c38cc3a1d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOrderBook.html#ab70f718b819c348480a3731c38cc3a1d">GetBidDepth</a> () const</td></tr>
 <tr class="memdesc:ab70f718b819c348480a3731c38cc3a1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get total bid depth.  <br /></td></tr>
 <tr class="separator:ab70f718b819c348480a3731c38cc3a1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb63d661a3bb75e55237b3e537abbf5a" id="r_aeb63d661a3bb75e55237b3e537abbf5a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOrderBook.html#aeb63d661a3bb75e55237b3e537abbf5a">GetImbalance</a> () const</td></tr>
 <tr class="memdesc:aeb63d661a3bb75e55237b3e537abbf5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate order book imbalance.  <br /></td></tr>
 <tr class="separator:aeb63d661a3bb75e55237b3e537abbf5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c64d0ce3af05490adbad50c59884aa2" id="r_a3c64d0ce3af05490adbad50c59884aa2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOrderBook.html#a3c64d0ce3af05490adbad50c59884aa2">Empty</a> () const</td></tr>
-<tr class="memdesc:a3c64d0ce3af05490adbad50c59884aa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if order book is empty.  <br /></td></tr>
-<tr class="separator:a3c64d0ce3af05490adbad50c59884aa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd574c586e4de842095826bb73b4af9c" id="r_afd574c586e4de842095826bb73b4af9c"><td class="memItemLeft" align="right" valign="top">std::optional&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOrderBook.html#afd574c586e4de842095826bb73b4af9c">GetMidPrice</a> () const</td></tr>
+<tr class="memdesc:afd574c586e4de842095826bb73b4af9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the mid price between best bid and ask.  <br /></td></tr>
+<tr class="separator:afd574c586e4de842095826bb73b4af9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27d06d51c2270dfd8fc0eb364debeba8" id="r_a27d06d51c2270dfd8fc0eb364debeba8"><td class="memItemLeft" align="right" valign="top">std::optional&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOrderBook.html#a27d06d51c2270dfd8fc0eb364debeba8">GetSpread</a> () const</td></tr>
+<tr class="memdesc:a27d06d51c2270dfd8fc0eb364debeba8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the spread between best ask and bid prices.  <br /></td></tr>
+<tr class="separator:a27d06d51c2270dfd8fc0eb364debeba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a847ec2e26715a08cc4527d569a4e7ced" id="r_a847ec2e26715a08cc4527d569a4e7ced"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structOrder.html">Order</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOrderBook.html#a847ec2e26715a08cc4527d569a4e7ced">Asks</a></td></tr>
+<tr class="separator:a847ec2e26715a08cc4527d569a4e7ced"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad10dafdf0d05159bbeb2c68004f0949a" id="r_ad10dafdf0d05159bbeb2c68004f0949a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structOrder.html">Order</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOrderBook.html#ad10dafdf0d05159bbeb2c68004f0949a">Bids</a></td></tr>
+<tr class="separator:ad10dafdf0d05159bbeb2c68004f0949a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
@@ -117,6 +146,8 @@ Friends</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class implementing order book functionality. </p>
+
+<p class="definition">Definition at line <a class="el" href="order__book_8h_source.html#l00017">17</a> of file <a class="el" href="order__book_8h_source.html">order_book.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a3c64d0ce3af05490adbad50c59884aa2" name="a3c64d0ce3af05490adbad50c59884aa2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3c64d0ce3af05490adbad50c59884aa2">&#9670;&#160;</a></span>Empty()</h2>
@@ -136,6 +167,13 @@ Friends</h2></td></tr>
 <p>Check if order book is empty. </p>
 <dl class="section return"><dt>Returns</dt><dd>true if no orders present, false otherwise </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="order__book_8cpp_source.html#l00077">77</a> of file <a class="el" href="order__book_8cpp_source.html">order_book.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   77</span>                            {</div>
+<div class="line"><span class="lineno">   78</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classOrderBook.html#a847ec2e26715a08cc4527d569a4e7ced">Asks</a>.empty() &amp;&amp; <a class="code hl_variable" href="classOrderBook.html#ad10dafdf0d05159bbeb2c68004f0949a">Bids</a>.empty(); </div>
+<div class="line"><span class="lineno">   79</span>}</div>
+<div class="ttc" id="aclassOrderBook_html_a847ec2e26715a08cc4527d569a4e7ced"><div class="ttname"><a href="classOrderBook.html#a847ec2e26715a08cc4527d569a4e7ced">OrderBook::Asks</a></div><div class="ttdeci">std::vector&lt; Order &gt; Asks</div><div class="ttdef"><b>Definition</b> <a href="order__book_8h_source.html#l00067">order_book.h:67</a></div></div>
+<div class="ttc" id="aclassOrderBook_html_ad10dafdf0d05159bbeb2c68004f0949a"><div class="ttname"><a href="classOrderBook.html#ad10dafdf0d05159bbeb2c68004f0949a">OrderBook::Bids</a></div><div class="ttdeci">std::vector&lt; Order &gt; Bids</div><div class="ttdef"><b>Definition</b> <a href="order__book_8h_source.html#l00068">order_book.h:68</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad6343b0e78236e5558c34ec9f45c84f1" name="ad6343b0e78236e5558c34ec9f45c84f1"></a>
@@ -156,6 +194,15 @@ Friends</h2></td></tr>
 <p>Get total ask depth. </p>
 <dl class="section return"><dt>Returns</dt><dd>Sum of all ask quantities </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="order__book_8cpp_source.html#l00033">33</a> of file <a class="el" href="order__book_8cpp_source.html">order_book.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   33</span>                                    {</div>
+<div class="line"><span class="lineno">   34</span>  <span class="keywordtype">double</span> depth{0.};</div>
+<div class="line"><span class="lineno">   35</span>  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;ask : <a class="code hl_variable" href="classOrderBook.html#a847ec2e26715a08cc4527d569a4e7ced">Asks</a>) {</div>
+<div class="line"><span class="lineno">   36</span>    depth += ask.quantity;</div>
+<div class="line"><span class="lineno">   37</span>  }</div>
+<div class="line"><span class="lineno">   38</span>  <span class="keywordflow">return</span> depth;</div>
+<div class="line"><span class="lineno">   39</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7924b1050a1fcb25159d6a989c85dfcd" name="a7924b1050a1fcb25159d6a989c85dfcd"></a>
@@ -176,6 +223,14 @@ Friends</h2></td></tr>
 <p>Get the best ask price. </p>
 <dl class="section return"><dt>Returns</dt><dd>Optional price value. Returns std::nullopt if no asks available </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="order__book_8cpp_source.html#l00003">3</a> of file <a class="el" href="order__book_8cpp_source.html">order_book.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">    3</span>                                                     {</div>
+<div class="line"><span class="lineno">    4</span>  <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classOrderBook.html#a847ec2e26715a08cc4527d569a4e7ced">Asks</a>.empty()) {</div>
+<div class="line"><span class="lineno">    5</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classOrderBook.html#a847ec2e26715a08cc4527d569a4e7ced">Asks</a>[0].price;</div>
+<div class="line"><span class="lineno">    6</span>  }</div>
+<div class="line"><span class="lineno">    7</span>  <span class="keywordflow">return</span> std::nullopt;</div>
+<div class="line"><span class="lineno">    8</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad84f41a2aa8d2a96aa3d94d98466daaa" name="ad84f41a2aa8d2a96aa3d94d98466daaa"></a>
@@ -196,6 +251,14 @@ Friends</h2></td></tr>
 <p>Get the best bid price. </p>
 <dl class="section return"><dt>Returns</dt><dd>Optional price value. Returns std::nullopt if no bids available </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="order__book_8cpp_source.html#l00009">9</a> of file <a class="el" href="order__book_8cpp_source.html">order_book.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">    9</span>                                                     {</div>
+<div class="line"><span class="lineno">   10</span>  <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classOrderBook.html#ad10dafdf0d05159bbeb2c68004f0949a">Bids</a>.empty()) {</div>
+<div class="line"><span class="lineno">   11</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classOrderBook.html#ad10dafdf0d05159bbeb2c68004f0949a">Bids</a>[0].price;</div>
+<div class="line"><span class="lineno">   12</span>  }</div>
+<div class="line"><span class="lineno">   13</span>  <span class="keywordflow">return</span> std::nullopt;</div>
+<div class="line"><span class="lineno">   14</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ab70f718b819c348480a3731c38cc3a1d" name="ab70f718b819c348480a3731c38cc3a1d"></a>
@@ -216,6 +279,15 @@ Friends</h2></td></tr>
 <p>Get total bid depth. </p>
 <dl class="section return"><dt>Returns</dt><dd>Sum of all bid quantities </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="order__book_8cpp_source.html#l00040">40</a> of file <a class="el" href="order__book_8cpp_source.html">order_book.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   40</span>                                    {</div>
+<div class="line"><span class="lineno">   41</span>  <span class="keywordtype">double</span> depth{0.};</div>
+<div class="line"><span class="lineno">   42</span>  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;ask : <a class="code hl_variable" href="classOrderBook.html#ad10dafdf0d05159bbeb2c68004f0949a">Bids</a>) {</div>
+<div class="line"><span class="lineno">   43</span>    depth += ask.quantity;</div>
+<div class="line"><span class="lineno">   44</span>  }</div>
+<div class="line"><span class="lineno">   45</span>  <span class="keywordflow">return</span> depth;</div>
+<div class="line"><span class="lineno">   46</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aeb63d661a3bb75e55237b3e537abbf5a" name="aeb63d661a3bb75e55237b3e537abbf5a"></a>
@@ -236,6 +308,19 @@ Friends</h2></td></tr>
 <p>Calculate order book imbalance. </p>
 <dl class="section return"><dt>Returns</dt><dd>Imbalance value in range [-1, 1] </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="order__book_8cpp_source.html#l00047">47</a> of file <a class="el" href="order__book_8cpp_source.html">order_book.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   47</span>                                     {</div>
+<div class="line"><span class="lineno">   48</span>  <span class="keywordtype">double</span> askDepth = <a class="code hl_function" href="classOrderBook.html#ad6343b0e78236e5558c34ec9f45c84f1">GetAskDepth</a>();</div>
+<div class="line"><span class="lineno">   49</span>  <span class="keywordtype">double</span> bidDepth = <a class="code hl_function" href="classOrderBook.html#ab70f718b819c348480a3731c38cc3a1d">GetBidDepth</a>();</div>
+<div class="line"><span class="lineno">   50</span> </div>
+<div class="line"><span class="lineno">   51</span>  <span class="keywordflow">if</span> (askDepth + bidDepth &lt; 1e-5)</div>
+<div class="line"><span class="lineno">   52</span>    <span class="keywordflow">return</span> 0.;</div>
+<div class="line"><span class="lineno">   53</span> </div>
+<div class="line"><span class="lineno">   54</span>  <span class="keywordflow">return</span> (bidDepth - askDepth) / (bidDepth + askDepth);</div>
+<div class="line"><span class="lineno">   55</span>}</div>
+<div class="ttc" id="aclassOrderBook_html_ab70f718b819c348480a3731c38cc3a1d"><div class="ttname"><a href="classOrderBook.html#ab70f718b819c348480a3731c38cc3a1d">OrderBook::GetBidDepth</a></div><div class="ttdeci">double GetBidDepth() const</div><div class="ttdoc">Get total bid depth.</div><div class="ttdef"><b>Definition</b> <a href="order__book_8cpp_source.html#l00040">order_book.cpp:40</a></div></div>
+<div class="ttc" id="aclassOrderBook_html_ad6343b0e78236e5558c34ec9f45c84f1"><div class="ttname"><a href="classOrderBook.html#ad6343b0e78236e5558c34ec9f45c84f1">OrderBook::GetAskDepth</a></div><div class="ttdeci">double GetAskDepth() const</div><div class="ttdoc">Get total ask depth.</div><div class="ttdef"><b>Definition</b> <a href="order__book_8cpp_source.html#l00033">order_book.cpp:33</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="afd574c586e4de842095826bb73b4af9c" name="afd574c586e4de842095826bb73b4af9c"></a>
@@ -256,6 +341,19 @@ Friends</h2></td></tr>
 <p>Get the mid price between best bid and ask. </p>
 <dl class="section return"><dt>Returns</dt><dd>Optional mid price value. Returns std::nullopt if either bid or ask is missing </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="order__book_8cpp_source.html#l00015">15</a> of file <a class="el" href="order__book_8cpp_source.html">order_book.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   15</span>                                                 {</div>
+<div class="line"><span class="lineno">   16</span>  <span class="keyword">auto</span> bestBid = <a class="code hl_function" href="classOrderBook.html#ad84f41a2aa8d2a96aa3d94d98466daaa">GetBestBidPrice</a>();</div>
+<div class="line"><span class="lineno">   17</span>  <span class="keyword">auto</span> bestAsk = <a class="code hl_function" href="classOrderBook.html#a7924b1050a1fcb25159d6a989c85dfcd">GetBestAskPrice</a>();</div>
+<div class="line"><span class="lineno">   18</span> </div>
+<div class="line"><span class="lineno">   19</span>  <span class="keywordflow">if</span> (bestBid &amp;&amp; bestAsk) {</div>
+<div class="line"><span class="lineno">   20</span>    <span class="keywordflow">return</span> (*bestAsk + *bestBid) / 2;</div>
+<div class="line"><span class="lineno">   21</span>  }</div>
+<div class="line"><span class="lineno">   22</span>  <span class="keywordflow">return</span> std::nullopt;</div>
+<div class="line"><span class="lineno">   23</span>}</div>
+<div class="ttc" id="aclassOrderBook_html_a7924b1050a1fcb25159d6a989c85dfcd"><div class="ttname"><a href="classOrderBook.html#a7924b1050a1fcb25159d6a989c85dfcd">OrderBook::GetBestAskPrice</a></div><div class="ttdeci">std::optional&lt; double &gt; GetBestAskPrice() const</div><div class="ttdoc">Get the best ask price.</div><div class="ttdef"><b>Definition</b> <a href="order__book_8cpp_source.html#l00003">order_book.cpp:3</a></div></div>
+<div class="ttc" id="aclassOrderBook_html_ad84f41a2aa8d2a96aa3d94d98466daaa"><div class="ttname"><a href="classOrderBook.html#ad84f41a2aa8d2a96aa3d94d98466daaa">OrderBook::GetBestBidPrice</a></div><div class="ttdeci">std::optional&lt; double &gt; GetBestBidPrice() const</div><div class="ttdoc">Get the best bid price.</div><div class="ttdef"><b>Definition</b> <a href="order__book_8cpp_source.html#l00009">order_book.cpp:9</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a27d06d51c2270dfd8fc0eb364debeba8" name="a27d06d51c2270dfd8fc0eb364debeba8"></a>
@@ -276,6 +374,17 @@ Friends</h2></td></tr>
 <p>Get the spread between best ask and bid prices. </p>
 <dl class="section return"><dt>Returns</dt><dd>Optional spread value. Returns std::nullopt if either bid or ask is missing </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="order__book_8cpp_source.html#l00024">24</a> of file <a class="el" href="order__book_8cpp_source.html">order_book.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   24</span>                                               {</div>
+<div class="line"><span class="lineno">   25</span>  <span class="keyword">auto</span> bestBid = <a class="code hl_function" href="classOrderBook.html#ad84f41a2aa8d2a96aa3d94d98466daaa">GetBestBidPrice</a>();</div>
+<div class="line"><span class="lineno">   26</span>  <span class="keyword">auto</span> bestAsk = <a class="code hl_function" href="classOrderBook.html#a7924b1050a1fcb25159d6a989c85dfcd">GetBestAskPrice</a>();</div>
+<div class="line"><span class="lineno">   27</span> </div>
+<div class="line"><span class="lineno">   28</span>  <span class="keywordflow">if</span> (bestBid &amp;&amp; bestAsk) {</div>
+<div class="line"><span class="lineno">   29</span>    <span class="keywordflow">return</span> *bestAsk - *bestBid;</div>
+<div class="line"><span class="lineno">   30</span>  }</div>
+<div class="line"><span class="lineno">   31</span>  <span class="keywordflow">return</span> std::nullopt;</div>
+<div class="line"><span class="lineno">   32</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Friends And Related Symbol Documentation</h2>
@@ -318,16 +427,96 @@ Friends</h2></td></tr>
   </dd>
 </dl>
 
+<p class="definition">Definition at line <a class="el" href="order__book_8cpp_source.html#l00056">56</a> of file <a class="el" href="order__book_8cpp_source.html">order_book.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   56</span>                                                    {</div>
+<div class="line"><span class="lineno">   57</span>  <span class="keyword">using </span>Json = nlohmann::json;</div>
+<div class="line"><span class="lineno">   58</span>  Json j = Json::parse(response);</div>
+<div class="line"><span class="lineno">   59</span>  <a class="code hl_class" href="classOrderBook.html">OrderBook</a> orderBook;</div>
+<div class="line"><span class="lineno">   60</span> </div>
+<div class="line"><span class="lineno">   61</span>  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;bid : j[<span class="stringliteral">&quot;bids&quot;</span>]) {</div>
+<div class="line"><span class="lineno">   62</span>    <a class="code hl_struct" href="structOrder.html">Order</a> order;</div>
+<div class="line"><span class="lineno">   63</span>    order.<a class="code hl_variable" href="structOrder.html#a22df57af82ecda59bd0ed1f7534a170b">price</a> = std::stod(bid[0].get&lt;std::string&gt;());</div>
+<div class="line"><span class="lineno">   64</span>    order.<a class="code hl_variable" href="structOrder.html#aab51d35d3c9acaf6c85076f379b64c03">quantity</a> = std::stod(bid[1].get&lt;std::string&gt;());</div>
+<div class="line"><span class="lineno">   65</span>    orderBook.<a class="code hl_variable" href="classOrderBook.html#ad10dafdf0d05159bbeb2c68004f0949a">Bids</a>.push_back(order);</div>
+<div class="line"><span class="lineno">   66</span>  }</div>
+<div class="line"><span class="lineno">   67</span> </div>
+<div class="line"><span class="lineno">   68</span>  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;ask : j[<span class="stringliteral">&quot;asks&quot;</span>]) {</div>
+<div class="line"><span class="lineno">   69</span>    <a class="code hl_struct" href="structOrder.html">Order</a> order;</div>
+<div class="line"><span class="lineno">   70</span>    order.<a class="code hl_variable" href="structOrder.html#a22df57af82ecda59bd0ed1f7534a170b">price</a> = std::stod(ask[0].get&lt;std::string&gt;());</div>
+<div class="line"><span class="lineno">   71</span>    order.<a class="code hl_variable" href="structOrder.html#aab51d35d3c9acaf6c85076f379b64c03">quantity</a> = std::stod(ask[1].get&lt;std::string&gt;());</div>
+<div class="line"><span class="lineno">   72</span>    orderBook.<a class="code hl_variable" href="classOrderBook.html#a847ec2e26715a08cc4527d569a4e7ced">Asks</a>.push_back(order);</div>
+<div class="line"><span class="lineno">   73</span>  }</div>
+<div class="line"><span class="lineno">   74</span> </div>
+<div class="line"><span class="lineno">   75</span>  <span class="keywordflow">return</span> orderBook;</div>
+<div class="line"><span class="lineno">   76</span>}</div>
+<div class="ttc" id="aclassOrderBook_html"><div class="ttname"><a href="classOrderBook.html">OrderBook</a></div><div class="ttdoc">Class implementing order book functionality.</div><div class="ttdef"><b>Definition</b> <a href="order__book_8h_source.html#l00017">order_book.h:17</a></div></div>
+<div class="ttc" id="astructOrder_html"><div class="ttname"><a href="structOrder.html">Order</a></div><div class="ttdoc">Order structure representing a single order in the order book.</div><div class="ttdef"><b>Definition</b> <a href="order__book_8h_source.html#l00009">order_book.h:9</a></div></div>
+<div class="ttc" id="astructOrder_html_a22df57af82ecda59bd0ed1f7534a170b"><div class="ttname"><a href="structOrder.html#a22df57af82ecda59bd0ed1f7534a170b">Order::price</a></div><div class="ttdeci">double price</div><div class="ttdoc">Order price.</div><div class="ttdef"><b>Definition</b> <a href="order__book_8h_source.html#l00010">order_book.h:10</a></div></div>
+<div class="ttc" id="astructOrder_html_aab51d35d3c9acaf6c85076f379b64c03"><div class="ttname"><a href="structOrder.html#aab51d35d3c9acaf6c85076f379b64c03">Order::quantity</a></div><div class="ttdeci">double quantity</div><div class="ttdoc">Order quantity.</div><div class="ttdef"><b>Definition</b> <a href="order__book_8h_source.html#l00011">order_book.h:11</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a847ec2e26715a08cc4527d569a4e7ced" name="a847ec2e26715a08cc4527d569a4e7ced"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a847ec2e26715a08cc4527d569a4e7ced">&#9670;&#160;</a></span>Asks</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="structOrder.html">Order</a>&gt; OrderBook::Asks</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="order__book_8h_source.html#l00067">67</a> of file <a class="el" href="order__book_8h_source.html">order_book.h</a>.</p>
+
+</div>
+</div>
+<a id="ad10dafdf0d05159bbeb2c68004f0949a" name="ad10dafdf0d05159bbeb2c68004f0949a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad10dafdf0d05159bbeb2c68004f0949a">&#9670;&#160;</a></span>Bids</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="structOrder.html">Order</a>&gt; OrderBook::Bids</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="order__book_8h_source.html#l00068">68</a> of file <a class="el" href="order__book_8h_source.html">order_book.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/runner/work/orderbook/orderbook/order_book/include/order_book/<a class="el" href="order__book_8h_source.html">order_book.h</a></li>
-<li>/home/runner/work/orderbook/orderbook/order_book/<a class="el" href="order__book_8cpp.html">order_book.cpp</a></li>
+<li>/home/runner/work/orderbook/orderbook/order_book/<a class="el" href="order__book_8cpp_source.html">order_book.cpp</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classOrderBook.html">OrderBook</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
 </body>
 </html>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['quantity_0',['quantity',['../structOrder.html#aab51d35d3c9acaf6c85076f379b64c03',1,'Order']]]
+  ['bids_0',['Bids',['../classOrderBook.html#ad10dafdf0d05159bbeb2c68004f0949a',1,'OrderBook']]]
 ];

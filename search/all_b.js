@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['readme_2emd_0',['README.md',['../README_8md.html',1,'']]]
+  ['_7ecurl_0',['~Curl',['../classCurl.html#a3b768a5f0ffd38e6766f5d99894707ea',1,'Curl']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['price_0',['price',['../structOrder.html#a22df57af82ecda59bd0ed1f7534a170b',1,'Order']]]
+  ['asks_0',['Asks',['../classOrderBook.html#a847ec2e26715a08cc4527d569a4e7ced',1,'OrderBook']]]
 ];
