@@ -14,7 +14,10 @@ public:
      * @param responseCode HTTP response code
      * @param responseBody Response body content
      */
-    CurlResponse(int responseCode, std::string responseBody);
+    CurlResponse(int responseCode, std::string responseBody) 
+        : responseCode_(responseCode)
+        , responseBody_(std::move(responseBody))
+    {}
 
     /**
      * @brief Get response code
