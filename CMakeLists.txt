@@ -1,9 +1,7 @@
 cmake_minimum_required(VERSION 3.10)
 
-# Название проекта
 project(orderbook)
 
-# Установка стандарта C++
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS ON)
@@ -14,7 +12,7 @@ FetchContent_Declare(
     curl
     URL https://curl.se/download/curl-8.5.0.tar.gz
     DOWNLOAD_EXTRACT_TIMESTAMP true
-    OVERRIDE_FIND_PACKAGE # this one
+    OVERRIDE_FIND_PACKAGE
 )
 FetchContent_Declare(
     json

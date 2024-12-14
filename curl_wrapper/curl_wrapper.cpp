@@ -7,7 +7,6 @@ static size_t WriteCallback(void *contents, size_t size, size_t nmemb, void *use
 }
 
 Curl::Curl() {
-    
     if (curl_global_init(CURL_GLOBAL_ALL) != CURLE_OK) {
         throw CurlException("Failed to initialize CURL");
     }
@@ -17,10 +16,8 @@ Curl::Curl() {
         throw CurlException("Failed to create CURL handle");
     }
 }
+
 CurlResponse Curl::Get(const std::string &url) const {
-    if (!Curl_) {
-        throw CurlException("Failed to initialize libcurl");
-    }
     std::string buffer;
     curl_easy_setopt(Curl_, CURLOPT_URL, url.c_str());
     curl_easy_setopt(Curl_, CURLOPT_WRITEFUNCTION, WriteCallback);

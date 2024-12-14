@@ -1,6 +1,6 @@
 enable_testing()
 add_executable(tests test.cpp)
-target_link_libraries(tests curl_wrapper gtest_main)
+target_link_libraries(tests order_book gtest_main)
 include(GoogleTest)
 gtest_discover_tests(tests)
 
