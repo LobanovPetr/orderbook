@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 3.10)
 
+set(BUILD_SHARED_LIBS OFF)
+
 # Название проекта
 project(orderbook)
 
