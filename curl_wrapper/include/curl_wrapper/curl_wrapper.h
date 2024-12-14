@@ -2,6 +2,7 @@
 #include <curl/curl.h>
 #include <string>
 #include <exception>
+#include <stdexcept>
 
 class CurlException : public std::runtime_error {
 public:
