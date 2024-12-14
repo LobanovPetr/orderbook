@@ -14,6 +14,9 @@ Curl::Curl() {
     }
 }
 CurlResponse Curl::Get(const std::string &url) const {
+    if (!Curl_) {
+        throw CurlException("Failed to initialize libcurl");
+    }
     std::string buffer;
     curl_easy_setopt(Curl_, CURLOPT_URL, url.c_str());
     curl_easy_setopt(Curl_, CURLOPT_WRITEFUNCTION, WriteCallback);
