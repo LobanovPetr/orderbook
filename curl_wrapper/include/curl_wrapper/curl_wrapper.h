@@ -41,7 +41,7 @@ public:
      * @brief Constructor
      * @param message Error message
      */
-    CurlException(const std::string& message);
+    CurlException(const std::string& message) : std::runtime_error(message) {};
 };
 
 /**
