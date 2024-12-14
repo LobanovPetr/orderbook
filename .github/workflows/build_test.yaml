@@ -20,4 +20,6 @@ jobs:
       - uses: actions/download-artifact@v4
         with:
           name: binaries
-      - run: chmod +x tests && ./tests
+      - run: |
+          chmod +x tests
+          GTEST_BREAK_ON_FAILURE=1 CURL_VERBOSE=1 ./tests 2>&1 | tee test.log
