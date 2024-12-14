@@ -23,13 +23,17 @@ public:
      * @brief Get response code
      * @return HTTP response code
      */
-    int GetResponseCode() const;
+    int GetResponseCode() const {
+        return responseCode_;
+    };
 
     /**
      * @brief Get response body
      * @return String containing response body
      */
-    const std::string& GetResponseBody() const;
+    const std::string& GetResponseBody() const {
+        return responseBody_;
+    };
 private:
     int responseCode_;
     std::string responseBody_;
